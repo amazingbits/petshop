@@ -70,7 +70,7 @@
     var(--banner-bg-2)
   );
   padding: 50px 25px;
-  margin-top: 140px;
+  margin-top: 116px;
   display: grid;
   grid-template-columns: 30% 70%;
   gap: 25px;
@@ -414,5 +414,43 @@
 @media screen and (max-width: 730px) {
   .banner {
     grid-template-columns: 1fr;
+  }
+}
+
+.menu-mobile-btn {
+  display: none;
+}
+
+.menu-mobile-btn a {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--menu-bar-color-secondary);
+}
+
+.menu-open {
+  right: 0 !important;
+}
+
+.menu {
+  transition: all 0.3s linear;
+}
+
+@media screen and (max-width: 700px) {
+  .menu {
+    display: block;
+    position: fixed;
+    top: 116px;
+    right: -150px;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+    background-color: var(--menu-bar-color);
+    width: 150px;
+  }
+
+  .menu-mobile-btn {
+    display: block;
   }
 }
